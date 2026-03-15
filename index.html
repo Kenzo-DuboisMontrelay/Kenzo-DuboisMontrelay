@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kenzo Dubois-Montrelay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --ink: #1a1a18;
+      --muted: #7a7060;
+      --accent: #2e2a22;
+      --rule: #d0ccc0;
+      --link: #5a4e3a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { font-size: 18px; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'EB Garamond', Georgia, serif;
+      min-height: 100vh;
+      padding: 0 1.5rem;
+      opacity: 0;
+      animation: fadein 0.9s ease forwards;
+    }
+
+    @keyframes fadein {
+      to { opacity: 1; }
+    }
+
+    .wrap {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 5rem 0 6rem;
+    }
+
+    /* Header */
+    .name {
+      font-size: 2.1rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+      margin-bottom: 0.25rem;
+    }
+
+    .tagline {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 300;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 2.5rem;
+    }
+
+    hr.rule {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 2rem 0;
+    }
+
+    /* Bio */
+    .bio {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--ink);
+      margin-bottom: 2.5rem;
+    }
+
+    .bio em {
+      font-style: italic;
+      color: var(--muted);
+    }
+
+    /* Sections */
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .paper {
+      margin-bottom: 1.6rem;
+    }
+
+    .paper-title {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 0.2rem;
+    }
+
+    .paper-title a {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+      transition: border-color 0.2s;
+    }
+
+    .paper-title a:hover {
+      border-color: var(--link);
+      color: var(--link);
+    }
+
+    .paper-meta {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.67rem;
+      color: var(--muted);
+      font-weight: 300;
+    }
+
+    .paper-abstract {
+      font-size: 0.92rem;
+      line-height: 1.65;
+      color: var(--muted);
+      margin-top: 0.4rem;
+      font-style: italic;
+    }
+
+    /* Contact */
+    .contact {
+      font-size: 0.95rem;
+      line-height: 1.9;
+    }
+
+    .contact a {
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .contact a:hover {
+      border-color: var(--link);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 4rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      color: var(--rule);
+      letter-spacing: 0.06em;
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1 class="name">Kenzo Dubois-Montrelay</h1>
+  <p class="tagline">Philosophy &middot; Cognitive Science &middot; Machine Learning</p>
+
+  <p class="bio">
+    Student in <em>Classes Préparatoires aux Grandes Écoles</em> (MPI), 
+    working at the intersection of normative political philosophy, 
+    cognitive science, and machine learning. My current research explores 
+    formal criteria for political unacceptability and the structural 
+    genealogy of metacognition across biological and artificial systems.
+  </p>
+
+  <hr class="rule">
+
+  <p class="section-label">Working Papers</p>
+
+  <div class="paper">
+    <p class="paper-title">
+      <a href="https://philpapers.org/rec/KENLDS" target="_blank" rel="noopener">
+        L'Inacceptable : Définition Et Traitement
+      </a>
+    </p>
+    <p class="paper-meta">Working Paper &middot; 2025 &middot; PhilPapers</p>
+    <p class="paper-abstract">
+      Proposes a formal criterion of the unacceptable as arbitrary power asymmetry, 
+      situated against Rawls, Sen and Pettit.
+    </p>
+  </div>
+
+  <div class="paper">
+    <p class="paper-title">
+      Beyond Intent: Reward Complexity, Monitoring, and the Emergence of Metacognition 
+      in Natural and Artificial Systems
+    </p>
+    <p class="paper-meta">Manuscript &middot; forthcoming on arXiv</p>
+    <p class="paper-abstract">
+      A structural genealogy of metacognition grounded in reward complexity and monitoring architecture.
+    </p>
+  </div>
+
+  <hr class="rule">
+
+  <p class="section-label">Contact</p>
+
+  <div class="contact">
+    <a href="mailto:duboismontrelay.kenzo@gmail.com">duboismontrelay.kenzo@gmail.com</a>
+  </div>
+
+  <footer>
+    Last updated &middot; 2026
+  </footer>
+
+</div>
+</body>
+</html>
